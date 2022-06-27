@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+/* Container */
+
+.container {
+    margin: 0 auto;
+    padding: 0 25px;
+    max-width: 1090px;
+}
+
+/* Header */
+
+header {
+    padding-top: 110px;
+    margin-bottom: 100px;
+
+    background-color: #472F88;
+    color: #fff;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.btn_primary {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 24px;
+
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: #472F88;
+}
+
+a:hover {
+    background-color: #E72287;
+    color:#fff
+}
+
+header p, header a {
+    margin-bottom: 30px;
+
+}
+
+/* Section 1 */
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section_1 {
+    margin-bottom: 100px;
+    
+    text-align: center;
+}
+
+.section_1 div:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 500px) {
+
+    /* Header */
+
+    .btn_primary {
+        width: auto;
+    }
+
+}
+
+@media screen and (min-width: 680px) {
+
+    /* Section 1 */
+    
+    .section_1 {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+        /* Section 1 */
+    
+        .section_1 {
+            grid-template-columns: 300px 300px 300px;
+        }
+
+        .section_1 div:not(:last-child) {
+            margin-bottom: 0;
+        }
+}
