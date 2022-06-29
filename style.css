@@ -157,7 +157,7 @@ footer h3 {
     margin-bottom: 15px;
 }
 
-footer a {
+footer .a_text a {
     display: block;
     margin-bottom: 15px;
 
@@ -166,6 +166,15 @@ footer a {
 
 footer div:not(:last-child) {
     margin-bottom: 68px;
+}
+
+footer p {
+    line-height: 32px;
+}
+
+.reseaux_container {
+    display: flex;
+    align-items: center;
 }
 
 /* Responsive */
@@ -193,6 +202,13 @@ footer div:not(:last-child) {
         justify-content: space-evenly;
     }
 
+    /* Footer */
+
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -213,4 +229,14 @@ footer div:not(:last-child) {
         justify-content: space-between;
     }
 
+    /* Footer */
+
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .child_flex-end {
+        justify-self: end;
+    }
 }
